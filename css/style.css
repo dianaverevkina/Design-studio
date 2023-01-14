@@ -1,0 +1,318 @@
+*{
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,*:before,*:after{
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+@font-face {
+  font-weight: 400;
+  font-style: normal;
+  font-family: 'Gilroy';
+  src: url('Gilroy-Regular.eot');
+  src: local('Gilroy Regular'),
+       url('Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+       url('Gilroy-Regular.woff2') format('woff2'),
+       url('Gilroy-Regular.woff') format('woff'),
+       url('Gilroy-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-weight: 500;
+  font-style: normal;
+  font-family: 'Gilroy'; /*sans serif*/
+  src: url('Gilroy-Medium.eot');
+  src: local('Gilroy Medium'), 
+       url('Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+       url('Gilroy-Medium.woff2') format('woff2'),
+       url('Gilroy-Medium.woff') format('woff'),
+       url('Gilroy-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-weight: 600;
+  font-style: normal;
+  font-family: 'Gilroy';
+  src: url('Gilroy-Semibold.eot');
+  src: local('Gilroy Semibold'), 
+       url('Gilroy-Semibold.eot?#iefix') format('embedded-opentype'),
+       url('Gilroy-Semibold.woff2') format('woff2'),
+       url('Gilroy-Semibold.woff') format('woff'),
+       url('Gilroy-Semibold.ttf') format('truetype');
+}
+
+@font-face {
+  font-weight: bold;
+  font-style: normal;
+  font-family: 'Gilroy';
+  src: url('Gilroy-Bold.eot');
+  src: local('Gilroy Bold'),
+       url('Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+       url('Gilroy-Bold.woff2') format('woff2'),
+       url('Gilroy-Bold.woff') format('woff'),
+       url('Gilroy-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: 'Angelus Medieval'; /*serif*/
+  src: url('../fonts/angelus_medieval.eot'); /* IE 9 Compatibility Mode */
+  src: url('../fonts/angelus_medieval.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+    url('../fonts/angelus_medieval.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../fonts/angelus_medieval.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+    url('../fonts/angelus_medieval.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/angelus_medieval.svg#angelus_medieval') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Gilroy', sans-serif;
+  color: #000;
+}
+
+body.lock {
+  overflow: hidden;
+}
+
+.header {
+}
+
+.header::before {
+  content: '';
+  
+}
+
+.container {
+  padding: 0 27px 0;
+}
+
+.header__info {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0 0;
+  margin-bottom: 100px;
+  background-color: #fff;
+}
+.logo {
+  z-index: 5;
+}
+.logo__link {
+}
+.logo__img {
+}
+.menu {
+}
+.menu__list {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  background-color: #d4c3ad;
+  margin: 60px 0 20px;
+  padding: 20px 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  transition: all .8s ease;
+  overflow: auto;
+  z-index: 2;
+}
+
+.menu__list.active {
+  right: 0;
+}
+
+.menu__items {
+  margin: 0 0 30px;
+}
+.menu__item {
+  margin: 0 0 15px;
+}
+
+.menu__item-link {
+  font-weight: 500;
+  font-size: 24px;
+  color: #352C2C;
+}
+
+.menu__item-link:active {
+  text-shadow: 0.5px 0.3px 2px rgba(0, 0, 0, 0.4);
+}
+
+.add-info {
+}
+.contact {
+}
+.contact__tel {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 24px;
+  color: #352C2C;
+  margin: 0 0 10px;
+}
+.lang {
+  width: 100%;
+  text-align: center;
+}
+.lang__items {
+  font-weight: 500;
+  font-size: 24px;
+  color: #352C2C;
+  padding: 0 23px 0 0;
+
+  -webkit-appearance: none;
+  -moz-apperarance: none;
+
+  background-color: transparent;
+  background: url('../svg/arrow.svg') center right no-repeat;
+}
+
+.lang__item {
+}
+
+.menu__icon {
+}
+.icon {
+  display: block;
+  width: 34.8px;
+  height: 24px;
+  position: relative;
+  z-index: 3;
+}
+
+.icon.active {
+  background: url('../svg/cross.svg') center no-repeat;
+  background-size: 100%;
+
+  transition: all 0.8s;
+}
+
+.icon__top, .icon__bottom {
+  position: absolute;
+  width: 18.6px;
+  height: 2.4px;
+  background-color: #212121;
+}
+
+.icon__top {
+  top: 0;
+  right: 0;
+}
+
+.icon__bottom {
+  bottom: 0;
+  left: 0;
+}
+
+
+.icon__middle {
+  position: absolute;
+  width: 100%;
+  height: 2.4px;
+  left: 0;
+  top: 45%;
+  background-color: #212121;
+}
+
+.icon.active .icon__top, .icon.active .icon__bottom, .icon.active .icon__middle {
+  display: none;
+  transition: all 0.8s;
+}
+
+
+
+.intro__body {
+  padding: 27px;
+}
+
+.start {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.start__title {
+  font-family: 'Angelus Medieval', serif;
+  font-size: 48px;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  margin: 0 0 41px;
+  color: #3D3737;
+}
+
+.start__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #161616;
+  margin: 0 0 41px;
+}
+
+.start__btn {
+  width: 100%;
+  font-weight: 700;
+  font-size: 16px;
+  color: #161616;;
+  text-align: center;
+  line-height: 1.5;
+  text-transform: uppercase;
+  background-color: transparent;
+
+  border: 2.5px solid #D3A265;
+  border-radius: 8px;
+  padding: 8px 0;
+
+  transition: all 0.5s ease-out;
+}
+
+.start__btn:active {
+  box-shadow: inset 50em 0 0 rgba(220, 178, 126, 0.6);
+  color: #fff;
+}
+
+.intro__image-sm {
+  width: 100%;
+  object-fit: cover;
+}
+
+.intro__image-b {
+  display: none;
+}
+
+
+
+
+
+
