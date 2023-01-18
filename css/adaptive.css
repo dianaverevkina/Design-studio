@@ -89,6 +89,10 @@
   margin: 0 0 6px;
 }
 
+.block__person-info {
+    display: block;
+}
+
 }
 
 @media (min-width: 690px) {

@@ -95,7 +95,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 body {
   min-height: 100vh;
   font-family: 'Gilroy', sans-serif;
-  color: #161616;;
+  color: #161616;
 }
 
 body.lock {
@@ -657,12 +657,7 @@ body.lock {
 /*REVIEWS*/
 
 .reviews {
-/*  margin: 0 0 45px;*/
   background-color: #F4F4F4;
-}
-
-.reviews__container {
-  padding: 0 28px 0;
 }
 
 .reviews__header {

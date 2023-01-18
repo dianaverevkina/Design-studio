@@ -42,7 +42,7 @@ let swiper = new Swiper('.slider', {
       },
       940: {
          slidesPerView: 2,
-         centeredSlides: false,
+         centeredSlides: true,
       },
    },
 })
