@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Interior Design Studio</title>
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/adaptive.css">
 </head>
@@ -11,10 +12,9 @@
 	<div class="wrapper">
 		<header class="header">
 			<div class="container">
-
 				<div class="header__info">
-					<div class="logo">
-						<a href="#" class="logo__link"><img src="img/png/logo.png" alt="id Studio" class="logo__img"></a>
+					<div class="header__logo logo">
+						<a href="#" class="logo__link"><img src="svg/logo.svg" alt="id Studio" class="logo__img"></a>
 					</div>
 					<nav class="menu">
 
@@ -23,19 +23,10 @@
 							    <li class="menu__item"><a href="#" class="menu__item-link">Services</a></li>
 							    <li class="menu__item"><a href="#" class="menu__item-link">Portfolio</a></li>
 							    <li class="menu__item"><a href="#" class="menu__item-link">Pricing</a></li>
-							    <li class="menu__item"><a href="#" class="menu__item-link">Services</a></li>
-							    <li class="menu__item"><a href="#" class="menu__item-link">Portfolio</a></li>
-							    <li class="menu__item"><a href="#" class="menu__item-link">Pricing</a></li>
-							    <li class="menu__item"><a href="#" class="menu__item-link">Services</a></li>
-							    <li class="menu__item"><a href="#" class="menu__item-link">Portfolio</a></li>
-							    <li class="menu__item"><a href="#" class="menu__item-link">Pricing</a></li>
-							    <li class="menu__item"><a href="#" class="menu__item-link">Services</a></li>
-							    <li class="menu__item"><a href="#" class="menu__item-link">Portfolio</a></li>
-							    <li class="menu__item"><a href="#" class="menu__item-link">Pricing</a></li>
 						    </ul>
 						    <div class="add-info">
 							    <div class="contact">
-								    <span class="contact__tel">(303) 555-0105</span>
+								    <span class="contact__tel">(303)555-0105</span>
 							    </div>
 							    <form action="" class="lang">
 								    <select name="language" class="lang__items">
@@ -53,22 +44,16 @@
 					    </div>
 					</nav>
 				</div>
-	
 			</div>
 		</header>
 		<main class="content">
 			
 			<section class="intro">
 				<div class="intro__row">
-					
 					<div class="intro__body start">
 						<h1 class="start__title">We create your space better</h1>
 					    <p class="start__text">Our team creates comfortable spaces for our clients. We’ve been designing your everyday life and work through great ideas since 1999.</p>
-					   <!--  <p class="start__text">Our team creates comfortable spaces for our clients. We’ve been designing your everyday life and work through great ideas since 1999.</p>
-					    <p class="start__text">Our team creates comfortable spaces for our clients. We’ve been designing your everyday life and work through great ideas since 1999.</p>
-					    <p class="start__text">Our team creates comfortable spaces for our clients. We’ve been designing your everyday life and work through great ideas since 1999.</p> -->
-
-					    <a href="#" class="start__btn">Get started</a>
+					    <a href="#" class="start__btn button">Get started</a>
 					</div>
 		
 					<div class="intro__image">
@@ -80,16 +65,332 @@
 			</section>
 
 
-			<section class="text">
-				<p class="start__text">Our team creates comfortable spaces for our clients. We’ve been designing your everyday life and work through great ideas since 1999.</p>
-				<p class="start__text">Our team creates comfortable spaces for our clients. We’ve been designing your everyday life and work through great ideas since 1999.</p>
-			    <p class="start__text">Our team creates comfortable spaces for our clients. We’ve been designing your everyday life and work through great ideas since 1999.</p>
-			    <p class="start__text">Our team creates comfortable spaces for our clients. We’ve been designing your everyday life and work through great ideas since 1999.</p>
+			<section class="about">
+				<div class="container">
+					<div class="about__row">
+						<h2 class="about__header title">About <span class="title_color">Studio</span></h2>
+						<div class="about__body">
+							<p class="about__text">Interiart is an award-winning architecture and interior design practice based in NYC. We work internationally on projects of residential & commercial interior design that require a creative approach. Our talented and experienced designers leverage their knowledge and expertise to create unique and comfortable interiors for you.</p>
+							<p class="about__text about__text_hidden">Our team knows that interior design can be stressful for the client and we do our best to make it as easy as possible. We listen to your needs, ideas, and inputs. And most importantly, we make it exciting and enjoyable for our clients.</p>
+							<a href="#" class="about__btn btn">Read more</a>
+						</div>
+					</div>
+				</div>
 			</section>
+
+			<section class="services">
+				
+			    <div class="container services__container">
+				    <h2 class="services__header title">Our <span class="services__header_color title_color">Services</span></h2>
+				    <div class="services__row">
+				    	<div class="services__column services__column_first service-block">
+							<div class="service-block__image"><img src="svg/service1.svg" alt="Sofa icon" class="service-block__link"></div>		
+							<h3 class="service-block__header">Interior Design</h3>
+							<div class="service-block__text">Interior design services offer a vast variety of solutions for our clients’ homes and offices.</div>
+					    </div>
+					    <div class="services__column service-block">
+							<div class="service-block__image"><img src="svg/service2.svg" alt="Mountain icon" class="service-block__link"></div>
+						    <h3 class="service-block__header">Decorative Services</h3>
+						    <div class="service-block__text">Our professional decorators will be happy to help you change your house’s inner look.</div>
+					    </div>
+					    <div class="services__column service-block">
+							<div class="service-block__image"><img src="svg/service3.svg" alt="Space planning icon" class="service-block__link"></div>
+							<h3 class="service-block__header">Space Planning</h3>
+						    <div class="service-block__text">We create better interior experiences through our space planning services.</div>		
+					    </div>
+					    <div class="services__column services__column_last service-block">
+							<div class="service-block__image"><img src="svg/service4.svg" alt="Pencil icon" class="service-block__link"></div>			
+							<h3 class="service-block__header">Project Management</h3>
+						    <div class="service-block__text">We provide proper project management as it’s one of the main success factors in interior design.</div>
+						</div>
+				    </div>
+				    <div class="services__btn">
+				    	<a href="#" class="services__btn-link button">Free consultation</a>
+				    </div>
+			    </div>
+			</section>
+
+			<section class="portfolio">
+				<div class="container">
+					<h2 class="portfolio__header title">Our <span class="portfolio__header_color title_color">Portfolio</span></h2>
+					<div class="portfolio__block">
+						<div class="portfolio__menu">
+							<ul class="portfolio__items">
+							    <li ><a href="#" class="portfolio__item portfolio__item">All</a></li>
+							    <li><a href="#" class="portfolio__item">Comercial</a></li>
+							    <li><a href="#" class="portfolio__item">Residential</a></li>
+							    <li ><a href="#" class="portfolio__item">Office</a></li>
+							    <li><a href="#" class="portfolio__item">Other</a></li>
+						    </ul>
+						    <div class="portfolio__button"><a href="#" class="portfolio__button-link">View more</a></div>
+					    </div>
+					    <div class="portfolio__btn"><a href="#" class="portfolio__btn-link btn">View more</a></div>
+
+					    <div class="portfolio__photos">
+
+					        <div class="portfolio__photo">
+						        <a href="#" class="portfolio__link"></a>
+						        <picture class="portfolio__image">
+							        <source media="(max-width: 539px)" srcset="img/png/portfolio-mobile1.png">
+						     	    <source media="(min-width: 540px)" srcset="img/portfolio1.jpg">
+							        <img src="img/portfolio1.jpg" alt="Room design" class="portfolio__image">
+						        </picture>
+					        </div>
+
+					        <div class="portfolio__photo">
+						        <a href="#" class="portfolio__link"></a>
+						        <picture class="portfolio__image">
+							        <source media="(max-width: 539px)" srcset="img/png/portfolio-mobile2.png">
+						     	    <source media="(min-width: 540px)" srcset="img/portfolio2.jpg">
+							        <img src="img/portfolio2.jpg" alt="Room design" class="portfolio__image">
+						        </picture>
+					        </div>
+
+					        <div class="portfolio__photo">
+						        <a href="#" class="portfolio__link"></a>
+						        <picture class="portfolio__image">
+							        <source media="(max-width: 539px)" srcset="img/png/portfolio-mobile3.png">
+						     	    <source media="(min-width: 540px)" srcset="img/portfolio3.jpg">
+							        <img src="img/portfolio3.jpg" alt="Room design" class="portfolio__image">
+						        </picture>
+					        </div>
+
+					        <div class="portfolio__photo portfolio__photo_add">
+						        <a href="#" class="portfolio__link"></a>
+							    <img src="img/portfolio4.jpg" alt="Room design" class="portfolio__image">        
+					        </div>
+
+					        <div class="portfolio__photo portfolio__photo_add">
+						        <a href="#" class="portfolio__link"></a>
+							    <img src="img/portfolio5.jpg" alt="Room design" class="portfolio__image">        
+					        </div>
+
+					        <div class="portfolio__photo portfolio__photo_add">
+						        <a href="#" class="portfolio__link"></a>
+							    <img src="img/portfolio6.jpg" alt="Room design" class="portfolio__image">        
+					        </div>
+
+					        <div class="portfolio__photo portfolio__photo_add">
+						        <a href="#" class="portfolio__link"></a>
+							    <img src="img/portfolio7.jpg" alt="Room design" class="portfolio__image">        
+					        </div>
+
+					        <div class="portfolio__photo portfolio__photo_add">
+						        <a href="#" class="portfolio__link"></a>
+							    <img src="img/portfolio8.jpg" alt="Room design" class="portfolio__image">        
+					        </div>
+
+				        </div>
+				    </div>
+			    </div>
+			</section>
+
+			<section class="prices">
+				<div class="container">
+					<h2 class="prices__header title">Our <span class="prices__title_color title_color">Pricing</span></h2>
+					<div class="prices__row">
+						<div class="prices__column package">
+							<h3 class="package__type">Basic</h3>
+							<div class="package__price price"><span class="price__value">$25</span><span class="price__time">per month</span></div>
+							<ul class="package__services">
+								<li class="package__service">Interior Design</li>
+								<li class="package__service">Project Discussion</li>
+								<li class="package__service">Space Planning</li>
+								<li class="package__service">Online Consultation</li>
+							</ul>
+							<div class="package__btn">
+								<a href="#" class="package__btn-link">Buy now</a>
+						    </div>
+						    <a href="#" class="package__link"></a>
+						</div>
+
+						<div class="prices__column package">
+							<h3 class="package__type">Standart</h3>
+							<div class="package__price price"><span class="price__value">$50</span><span class="price__time">per month</span></div>
+							<ul class="package__services">
+								<li class="package__service">Color Analysis</li>
+								<li class="package__service">Space Planning</li>
+								<li class="package__service">Home Remodeling</li>
+								<li class="package__service">3D Interior Model</li>
+							</ul>
+							<div class="package__btn">
+								<a href="#" class="package__btn-link">Buy now</a>
+						    </div>
+						    <a href="#" class="package__link"></a>
+						</div>
+
+						<div class="prices__column package">
+							<h3 class="package__type">Premium</h3>
+							<div class="package__price price"><span class="price__value">$80</span><span class="price__time">per month</span></div>
+							<ul class="package__services">
+								<li class="package__service">Concept Development</li>
+								<li class="package__service">Decoration Services</li>
+								<li class="package__service">Interior Architecture</li>
+								<li class="package__service">Flooring Installation</li>
+							</ul>
+							<div class="package__btn">
+								<a href="#" class="package__btn-link">Buy now</a>
+						    </div>
+						    <a href="#" class="package__link"></a>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<section class="reviews">
+				<div class="container reviews__container">
+					<h2 class="reviews__header title">What <span class="reviews__header_color title_color">People Say</span></h2>
+
+
+					<div class="reviews__slider slider swiper-container">
+						<div class="slider__wrapper swiper-wrapper">
+
+							<div class="slider__review swiper-slide">
+								<div class="slider__top block">
+									<div class="block__img"><img src="img/png/review1.png" alt="Person's photo" class="block__img-link"></div>
+									<div class="block__info">
+										<div class="block__person">
+											<span class="block__person-name">Annette <span class="block__person-surname">Black</span></span>
+											<span class="block__person-info">Merchandising Associate</span>
+										</div>
+										<div class="block__socials socials">
+											<a href="#" class="socials__link"><img src="svg/twitter.svg" alt="Twitter icon" class="socials__image"></a>
+					   		                <a href="#" class="socials__link"><img src="svg/linkedin.svg" alt="Linkedin icon" class="socials__image"></a>
+					   		                <a href="#" class="socials__link"><img src="svg/fb.svg" alt="Facebook icon" class="socials__image"></a>
+										</div>
+									</div>
+								</div>
+								<p class="slider__text">Convallis non proin ac bibendum. At pharetra sed ultrices semper. Lectus et ornare ultrices urna in. Id non fringilla dignissim ac risus amet eget egestas vestibulum. Aliquet etiam eget nulla nulla odio vel.</p>
+							</div>
+
+							<div class="slider__review swiper-slide">
+								<div class="slider__top block">
+									<div class="block__img"><img src="img/png/review2.png" alt="Person's photo" class="block__img-link"></div>
+									<div class="block__info">
+										<div class="block__person">
+											<span class="block__person-name">Annette <span class="block__person-surname">Black</span></span>
+											<span class="block__person-info">Merchandising Associate</span>
+										</div>
+										<div class="block__socials socials">
+											<a href="#" class="socials__link"><img src="svg/twitter.svg" alt="Twitter icon" class="socials__image"></a>
+					   		                <a href="#" class="socials__link"><img src="svg/linkedin.svg" alt="Linkedin icon" class="socials__image"></a>
+					   		                <a href="#" class="socials__link"><img src="svg/fb.svg" alt="Facebook icon" class="socials__image"></a>
+										</div>
+									</div>
+								</div>
+								<p class="slider__text">Convallis non proin ac bibendum. At pharetra sed ultrices semper. Lectus et ornare ultrices urna in. Id non fringilla dignissim ac risus amet eget egestas vestibulum. Aliquet etiam eget nulla nulla odio vel.</p>
+							</div>
+
+							<div class="slider__review swiper-slide">
+								<div class="slider__top block">
+									<div class="block__img"><img src="img/png/review1.png" alt="Person's photo" class="block__img-link"></div>
+									<div class="block__info">
+										<div class="block__person">
+											<span class="block__person-name">Annette <span class="block__person-surname">Black</span></span>
+											<span class="block__person-info">Merchandising Associate</span>
+										</div>
+										<div class="block__socials socials">
+											<a href="#" class="socials__link"><img src="svg/twitter.svg" alt="Twitter icon" class="socials__image"></a>
+					   		                <a href="#" class="socials__link"><img src="svg/linkedin.svg" alt="Linkedin icon" class="socials__image"></a>
+					   		                <a href="#" class="socials__link"><img src="svg/fb.svg" alt="Facebook icon" class="socials__image"></a>
+										</div>
+									</div>
+								</div>
+								<p class="slider__text">Convallis non proin ac bibendum. At pharetra sed ultrices semper. Lectus et ornare ultrices urna in. Id non fringilla dignissim ac risus amet eget egestas vestibulum. Aliquet etiam eget nulla nulla odio vel.</p>
+							</div>
+
+							<div class="slider__review swiper-slide">
+								<div class="slider__top block">
+									<div class="block__img"><img src="img/png/review1.png" alt="Person's photo" class="block__img-link"></div>
+									<div class="block__info">
+										<div class="block__person">
+											<span class="block__person-name">Annette <span class="block__person-surname">Black</span></span>
+											<span class="block__person-info">Merchandising Associate</span>
+										</div>
+										<div class="block__socials socials">
+											<a href="#" class="socials__link"><img src="svg/twitter.svg" alt="Twitter icon" class="socials__image"></a>
+					   		                <a href="#" class="socials__link"><img src="svg/linkedin.svg" alt="Linkedin icon" class="socials__image"></a>
+					   		                <a href="#" class="socials__link"><img src="svg/fb.svg" alt="Facebook icon" class="socials__image"></a>
+										</div>
+									</div>
+								</div>
+								<p class="slider__text">Convallis non proin ac bibendum. At pharetra sed ultrices semper. Lectus et ornare ultrices urna in. Id non fringilla dignissim ac risus amet eget egestas vestibulum. Aliquet etiam eget nulla nulla odio vel.</p>
+							</div>
+							
+							
+						</div>
+
+						<div class="swiper-pagination"></div>
+                    </div>
+
+				</div>
+			</section>
+
+		<!-- 	<section class="questions">
+				<div class="container">
+					<div class="questions__block">
+						<h2 class="questions__header title">Do you have<span class="questions__header_color title_color">any questions?</span></h2>
+						<div class="questions__btn">
+							<a href="#" class="questions__btn-link button">Order a call</a>
+						</div>
+					</div>
+				</div>
+			</section> -->
+
 		</main>
-		<div class="footer"></div>
+		<div class="footer">
+			<div class="container">
+				<div class="footer__row">
+					<div class="footer__column studio">
+						<div class="footer__logo logo">
+						    <a href="#" class="logo__link"><img src="svg/logo.svg" alt="id Studio" class="logo__img"></a>
+					    </div>
+					    <p class="studio__text">We are one of the leading interior design and remodeling studios available for all of your residential and commercial interior design needs.</p>
+					</div>
+
+					 <div class="footer__column footer__column_b">
+					    <div class="footer__block navigation">
+					    	<h3 class="navigation__header header_sm">Navigation</h3>
+					   	    <ul class="navigation__list">
+					    	   	<li><a href="#" class="navigation__item">About</a></li>
+					    	    <li><a href="#" class="navigation__item">Services</a></li>
+					    	    <li><a href="#" class="navigation__item">Portfolio</a></li>
+					    	    <li><a href="#" class="navigation__item">Pricing</a></li>
+					    	    <li><a href="#" class="navigation__item">Testemonials</a></li>
+					        </ul>
+					    </div>
+					   	<div class="footer__socials socials">
+					   		<a href="#" class="socials__link"><img src="svg/twitter.svg" alt="Twitter icon" class="socials__image"></a>
+					   		<a href="#" class="socials__link"><img src="svg/linkedin.svg" alt="Linkedin icon" class="socials__image"></a>
+					   		<a href="#" class="socials__link"><img src="svg/fb.svg" alt="Facebook icon" class="socials__image"></a>
+					    </div>
+					</div>
+					
+					<div class="footer__column contacts">
+						<h3 class="contacts__header header_sm">Contacts</h3>
+						<div class="contacts__types">
+							<div class="contacts__type">
+							    <h4 class="contacts__type-name">Adress</h4>
+							    <p class="contacts__value">3517 W. Gray St. Utica, Pennsylvania 57867</p>
+							</div>
+						    <div class="contacts__type">
+							    <h4 class="contacts__type-name">Email</h4>
+							    <p class="contacts__value">michelle.rivera@idstudio.com</p>
+						    </div>
+						    <div class="contacts__type">
+							    <h4 class="contacts__type-name">Phones</h4>
+							   <p class="contacts__value">(808) 555-0111 or (303) 555-0105</p>
+						    </div>
+						</div>
+					</div>
+				</div>
+			    <a href="#" class="studio__rights">©  2023 id Studio. All Rights Reserved.</a>
+			</div>
+		</div>
 	</div>
 
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>
