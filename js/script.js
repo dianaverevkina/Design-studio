@@ -1,4 +1,4 @@
-
+//Открыть/закрыть меню бургер
 let icon = document.querySelectorAll('.icon');
 let menu__list = document.querySelector('.menu__list');
 let back = document.querySelector('body');
@@ -11,6 +11,7 @@ icon.forEach(function (item) {
    }
 });
 
+//Подключение слайдера для блока Reviews
 let swiper = new Swiper('.slider', {
    pagination: {
       el: '.swiper-pagination',

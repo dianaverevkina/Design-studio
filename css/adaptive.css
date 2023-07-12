@@ -59,6 +59,10 @@
         margin: 0 0 35px;
     }
 
+    .price {
+      text-align: center;
+    }
+
     .questions__btn {
         min-width: 70%;
     }
@@ -226,7 +230,6 @@
 
     .price {
         font-size: 36px;
-        text-align: center;
     }
 
     .price__value {
