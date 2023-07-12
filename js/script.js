@@ -23,26 +23,20 @@ let swiper = new Swiper('.slider', {
       pageUpDown: true,
    },
 
-   // slidesPerView: 1,
-
    watchOverflow: true,
 
-   spaceBetween: 70,
-
    loop: true,
-
-   loopedSlides: 4,
-
    speed: 700,
 
    breakpoints: {
       320: {
          slidesPerView: 1,
+         spaceBetween: 200,
          centeredSlides: true,
       },
-      940: {
+      690: {
          slidesPerView: 2,
-         centeredSlides: true,
+           spaceBetween: 30,
       },
    },
 })
