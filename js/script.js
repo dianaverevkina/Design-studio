@@ -23,8 +23,6 @@ let swiper = new Swiper('.slider', {
       pageUpDown: true,
    },
 
-   watchOverflow: true,
-
    loop: true,
    speed: 700,
 
